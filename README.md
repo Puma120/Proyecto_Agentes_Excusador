@@ -53,7 +53,7 @@ cp .env.example server/.env
 
 Edita `server/.env` con tus credenciales:
 ```env
-MONGODB_URI=mongodb+srv://puma:Sansa_10@puma-cluster.k0felzn.mongodb.net/?retryWrites=true&w=majority&appName=Puma-Cluster
+MONGODB_URI=mongodb+srv://...
 GEMINI_API_KEY=tu_api_key_de_gemini
 FRONTEND_URL=http://localhost:5173
 PORT=3000
