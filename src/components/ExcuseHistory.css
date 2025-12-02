@@ -1,0 +1,250 @@
+.excuse-history {
+  margin-top: 2rem;
+}
+
+.toggle-history-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: rgba(220, 201, 169, 0.95);
+  color: #4E6851;
+  border: 3px solid #B83A2D;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.toggle-history-btn:hover {
+  background: #DCC9A9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(184, 58, 45, 0.3);
+}
+
+.history-content {
+  background: rgba(220, 201, 169, 0.98);
+  margin-top: 1rem;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  animation: slideDown 0.3s ease;
+  border: 3px solid #4E6851;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 1000px;
+  }
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #B83A2D;
+}
+
+.history-header h3 {
+  background: linear-gradient(135deg, #B83A2D 0%, #4E6851 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.refresh-btn {
+  padding: 0.5rem 1rem;
+  background: #4E6851;
+  color: #DCC9A9;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.refresh-btn:hover:not(:disabled) {
+  background: #3d5240;
+  transform: translateY(-2px);
+}
+
+.refresh-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.empty-history {
+  text-align: center;
+  padding: 3rem;
+  color: #999;
+}
+
+.empty-history p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.history-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.history-list::-webkit-scrollbar-track {
+  background: rgba(78, 104, 81, 0.1);
+  border-radius: 10px;
+}
+
+.history-list::-webkit-scrollbar-thumb {
+  background: #4E6851;
+  border-radius: 10px;
+}
+
+.history-list::-webkit-scrollbar-thumb:hover {
+  background: #B83A2D;
+}
+
+.history-item {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 15px;
+  border-left: 5px solid #B83A2D;
+  transition: all 0.3s ease;
+  border: 2px solid #4E6851;
+}
+
+.history-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px rgba(184, 58, 45, 0.3);
+}
+
+.history-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.absurdity-badge {
+  background: #DCC9A9;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  color: #4E6851;
+  font-size: 0.9rem;
+  border: 2px solid #B83A2D;
+}
+
+.history-date {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.history-situation {
+  margin-bottom: 1rem;
+  color: #2a3d2e;
+  font-size: 0.95rem;
+}
+
+.history-situation strong {
+  color: #B83A2D;
+}
+
+.history-excuse {
+  background: rgba(220, 201, 169, 0.3);
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #2a3d2e;
+  margin-bottom: 1rem;
+  font-style: italic;
+  border-left: 3px solid #4E6851;
+}
+
+.history-context {
+  color: #4E6851;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.history-context strong {
+  color: #B83A2D;
+}
+
+.history-player {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.history-export-btn {
+  padding: 0.5rem 1rem;
+  background: #4E6851;
+  color: #DCC9A9;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.history-export-btn:hover {
+  background: #3d5240;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(78, 104, 81, 0.4);
+}
+
+@media (max-width: 768px) {
+  .history-content {
+    padding: 1.5rem;
+  }
+
+  .history-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .refresh-btn {
+    width: 100%;
+  }
+
+  .history-item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .history-list {
+    max-height: 400px;
+  }
+}
